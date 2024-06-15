@@ -91,7 +91,7 @@ config.tab_and_split_indices_are_zero_based = true
 -- tmux status
 wezterm.on("update-right-status", function(window, pane)
     local SOLID_LEFT_ARROW = ""
-    local ARROW_FOREGROUND = { Foreground = { Color = "#ca9ee6" } }
+    local ARROW_FOREGROUND = { Foreground = { Color = "#c6a0f6" } }
     local prefix = ""
 
     if window:leader_is_active() then
@@ -104,13 +104,12 @@ wezterm.on("update-right-status", function(window, pane)
     end -- arrow color based on if tab is first pane
 
     window:set_left_status(wezterm.format {
-        { Background = { Color = "#99d1db" } },
+        { Background = { Color = "#b7bdf8" } },
         { Text = prefix },
         ARROW_FOREGROUND,
         { Text = SOLID_LEFT_ARROW }
     })
 end)
-
 
 -- and finally, return the configuration to wezterm
 return config
