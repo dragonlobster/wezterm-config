@@ -99,7 +99,7 @@ wezterm.on("update-right-status", function(window, pane)
         SOLID_LEFT_ARROW = utf8.char(0xe0b2)
     end
 
-    if pane:pane_id() ~= 0 then
+    if window:active_tab():tab_id() ~= 0 then
         ARROW_FOREGROUND = { Foreground = { Color = "#1e2030" } }
     end -- arrow color based on if tab is first pane
 
