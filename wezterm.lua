@@ -89,7 +89,7 @@ config.use_fancy_tab_bar = false
 config.tab_and_split_indices_are_zero_based = true
 
 -- tmux status
-wezterm.on("update-right-status", function(window, pane)
+wezterm.on("update-right-status", function(window, _)
     local SOLID_LEFT_ARROW = ""
     local ARROW_FOREGROUND = { Foreground = { Color = "#c6a0f6" } }
     local prefix = ""
