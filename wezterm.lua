@@ -14,7 +14,7 @@ end
 config.color_scheme = "Catppuccin Macchiato"
 config.font =
     wezterm.font("JetBrains Mono NL")
-config.font_size = 15
+config.font_size = 20
 
 config.window_decorations = "RESIZE"
 
@@ -70,6 +70,26 @@ config.keys = {
         mods = "LEADER",
         key = "l",
         action = wezterm.action.ActivatePaneDirection "Right"
+    },
+    {
+        mods = "LEADER",
+        key = "LeftArrow",
+        action = wezterm.action.AdjustPaneSize { "Left", 5 }
+    },
+    {
+        mods = "LEADER",
+        key = "RightArrow",
+        action = wezterm.action.AdjustPaneSize { "Right", 5 }
+    },
+    {
+        mods = "LEADER",
+        key = "DownArrow",
+        action = wezterm.action.AdjustPaneSize { "Down", 5 }
+    },
+    {
+        mods = "LEADER",
+        key = "UpArrow",
+        action = wezterm.action.AdjustPaneSize { "Up", 5 }
     },
 }
 
