@@ -14,7 +14,7 @@ end
 config.color_scheme = "Catppuccin Macchiato"
 config.font =
     wezterm.font("JetBrains Mono NL")
-config.font_size = 20
+config.font_size = 16
 
 config.window_decorations = "RESIZE"
 
